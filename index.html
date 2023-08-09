@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Denso | Generador de QR</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="shortcut icon" href="./public/img/Denso_logo (2).ico" />
+    <link rel="stylesheet" href="./style.css">   
+  </head>
+  <body>
+    <div style="text-align:center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Denso_logo.svg" alt="DENSO Logo" width="250" height="50">
+    </div>    
+    <div>
+      <label class="inputqr" for="qr-input">QR SYSTEM GENERATOR</label>
+      <input type="text" id="qr-input" placeholder="Introduce el numero de lote">
+    </div>
+    <div>  
+      <h2 id="title"></h2>
+      <canvas id="qr-canvas"></canvas>
+    </div>
+    <button id="download-btn"><i class="fas fa-download"></i>Guardar Codigo QR</button>
+    <button id="print-btn"><i class="fas fa-print"></i>Imprimir Codigo QR</button>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+  <footer class="footer">DNMX | Deveolped by IoT Staff,  2023</footer>
+</html>
